@@ -1,0 +1,32 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "NEXT_TURBOPACK=0 next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^3.0.53",
+    "@ai-sdk/react": "^3.0.143",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@react-three/postprocessing": "^3.0.4",
+    "ai": "^6.0.141",
+    "framer-motion": "^12.36.0",
+    "lucide-react": "^0.577.0",
+    "maath": "^0.10.8",
+    "next": "16.1.6",
+    "playwright": "^1.58.2",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "three": "^0.183.2",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6"
+  }
+}

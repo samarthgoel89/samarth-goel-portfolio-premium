@@ -1,0 +1,111 @@
+SAMARTH GOEL samarth_goel2019@pgp.isb.edu  | +91-8377911890
+EDUCATION
+EDUCATION
+INDIAN SCHOOL OF BUSINESS  – Top 25 in the Financial Times Global MBA Rankings 2021 (Apr 2018 – Apr 2019)
+PGP in Management  |  Dean’s List  |  Top 10% amongst ~900  students | Major: Finance and Marketing
+JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY UNIVERSITY (Jul 2007 – Feb 2012)
+M.B.A.– Finance and Strategy, B. Tech.– Computer Science Engineering  |  Top 5% amongst 500  students
+National winner (among 480 teams)  of Analyst 2011, an  Apple product go-to-market strategy  case competition held at ABV-IIITM
+Implemented  Indian Sign Language interpreter  using  image processing  and  machine learning  to help give speech to the mute
+DELHI PUBLIC SCHOOL, VASANT KUNJ (1994 - 2007)
+Gold medalist: Top 10% amongst ~600 students  for  7 consecutive years  CERTIFICATIONS
+ CERTIFICATIONS
+CFA  (Chartered Financial Analyst) Level 1 from the CFA Institute
+The Fundamental of  Digital Marketing  from Google Digital Unlocked
+Google Analytics  for Beginners from Google Analytics Academy
+AI Generalist program  from GrowthSchool
+13  years  of experience building B2B and B2C  products in  fintech and   financial services industry  as  product manager  and business analyst across  capital markets  domain in US and Asia, and  digital consumer, personal and MSME lending  domain in India, while  collaborating  with   global, multicultural, and cross-functional teams .  SUMMARY
+ SUMMARY
+On the hunt to hone my skills in building new and scaling existing businesses and products.
+WORK EXPERIENCE
+WORK EXPERIENCE
+CLIX CAPITAL SERVICES PRIVATE LIMITED, GURUGRAM      (Dec 2022 – Present)
+Assistant Vice President | Strategy & New Business Initiatives - CEO’s Office | Co-lending Business | Product Head - Loan Against Property
+Launching  new products , setting up  new businesses ,  digital transformation  & managing Loan Against Property business
+Conceptualized  & launched  high ROA product  - Small Business Loan, and scaled up to  monthly INR 10cr business in 4 months
+Company’s  first scorecard based  underwriting;  short TAT ;  low touch  processing;  zero human resource ramp-up
+Formed the  basis of existing Upfront Reject in Business loans
+Setup co-lending business, and  scaled up  from  zero to monthly INR 50cr in 6 months  with a  lean team of three  (2 management trainees)
+Built a  book of INR ~400cr in 12 months ; contributed to  40% of company’s PAT (35cr) in FY25 ; established & managed  4 bank partners
+Digital integration with  2 platforms & 3 banks ; Developed  automations identifying pool from book  (to cover up for lack in sourcing)
+Conducted company-wide digital &  AI  Initiatives
+Self-developed  DSA visit app : Centrally track  4000+ monthly  SM DSA  visits ;  INR 17 lacs  worth  fee collected digitally in 2 months
+Zero cost to company;  inculcate  data driven decision making; Further to be used  for  self-incentive tracking & travel claims by SMs
+Self-developed  POC for automated real-time payment application  for customer payments made via digital payment links
+Eliminated  2 hours  of  daily manual effort ;  improved  payment  application accuracy ;  minimized reconciliation issues
+Self-developed  POC for  AI caller  for  automated regular DSA reachout , engagement & Clix offering awareness:  http://bit.ly/4ao1DAK
+Self-developed  POC for Clix LAP Policy Saarthi (RAG)  AI Bot  aimed at  enhancing  on-field  salesforce effectiveness :  https://bit.ly/4r8u7pu
+Self-developed  AI based utility  to find nearby DSAs  which could help Salesteam  to prospect new DSAs :  https://bit.ly/DSA-finder
+Created  AI generated  audio-visual content  for Clix:
+Video  for announcing the  first prize winner of FY25 JFM contest  with the help of an agency:  https://bit.ly/Clix-winner
+Clix Anthem  for  FY25 Offsite  event:  https://tinyurl.com/Clix-anthem
+Self-developed  AI agent  for  personal brand building  as AI enthusiast & budding expert that  generates & posts consented LinkedIn posts
+Self-developed a  personal  AI curated newsletter   to  keep myself updated  about  industries of my interest :  https://bit.ly/clix-briefs
+Conducted  knowledge sharing session on effective use of  Generative AI   and  thought stimulation workshop  for all Clix employees
+Enhanced  operational efficiency & per rupee disbursed income  of Loan Against Property business
+Designed & launched the company’s  first Sales Management App
+Enabling  on-the-go 100% digital logins  with  on-demand CIBIL and banking check , and  digital fee collection  to  enhance productivity
+Enhanced  digitalisation of LOS  by enabling  on-system initiation of eMandate and loan docket execution
+Increased  insurance PDR by 25 bps YoY  & introduced  new Legal & Technical Charges  worth  INR ~65 lacs per annum
+Introduced & created  new LAP products  - GST Margin, LAP-BL Combo and 20-20-10 in line with the industry
+Self-developed  business dashboards directly integrated with LMS & LOS  providing  on-demand view of productivity, efficiency and profitability  of LAP business  saving 8 man hours daily  &  enabling data-driven decisioning  and strategy formulation,  at zero cost
+DMI FINANCE PVT. LTD., NEW DELHI                                                                                                                                                   (May 2019 – Dec 2022)
+Senior Product Manager | Digital Consumer, Personal and MSME Lending
+Building and managing  end-to-end customer loan journeys  covering customer discovery, acquisition, onboarding, servicing and collections, and customer retention via cross and up selling. Benchmarking financial and tech products against competition.
+Achieved  loan book   growth from INR 1200 crores to INR 4300+ crores  in 3 years
+With  zero ramp up in human resources  by ideating and building automation tools
+Generated 4800X improvement and INR 60 crores per annum ,   in operational efficiency and business value, respectively
+Increased  monthly disbursals by 4X from INR 100 cr in H1 2022 to INR 400 cr   in H1 2023  for Samsung, a strategic OEM partner by
+Expansion into  new product categories  - Consumer Electronics & Tablets, and  bundling related products  – Warranty & Insurance
+Expansion of  sales channels – offline from 25K to 60K dealers , and  online  by launching on  Samsung eStore
+Improvement of conversion rates by 40%  by extending  sustenance of customer’s interest  via journey optimizations 
+Established 100% digital  API based  partnerships  with Servify (Apple reseller chain in India), Google Pay, Airtel, Jio, Reliance Retail Ltd.
+Designed  and  executed targeted cross selling  program increasing cross-sell  monthly disbursals  from INR 0 to  INR 40 crores
+Widened payment options   from 4 to 20+  used for EMI collections by  onboarding new payment partners, PGs and BBPS
+Improved portfolio quality  and  KYC compliance  by adopting  AI based photo liveliness  check on selfies
+Developed  100%  digital KYC stack  handling all KYC types leveraging  oKYC, Digilocker, AI driven OCR and facial recognition
+Reduced false KYC rejects by 80% in acquisition funnel  by solving for Aadhaar aging problem using  analytics model  and  AWS
+Enabled  better underwriting for NTC customers  by incorporating  Account Aggregator  into the loan application journey
+CITIBANK, SINGAPORE (Jun 2014 - Apr 2018)
+Assistant Vice President, IT Business Analyst | Institutional Clients Group – Operations and Technology
+Fast growth  trajectory in  3 years (vs average ~4.5 years) : Assistant Manager->Manager->Assistant Vice President
+Key accomplishments
+Received  Dazzle Award (awarded to 100 out of 80K) and USD 2000  as   a token of appreciation for outstanding performance
+Achieved rank 1 on the Wall Street  for Citi Velocity, the bank’s  market intelligence platform  used by 82K+ customers in 130 countries
+15% increase  in client engagement by  redesigning UI  and adding  new features serving unserved end client needs
+Problem-solving and strategic solution designing skills
+Enabled sales traders to  target sell financial products to 20,000+ clients  by 2019 through development of  stock recommendation engine
+Ideated a framework to  segment clients  and generate  machine learning and natural language processing  based recommendations
+Saved $ 2M  in potential fines and  loss of banking licenses  to regulators in the USA and Hong Kong through  root cause analysis
+Proactively  used findings from RCA to design  strategic risk management  and  control solutions  as preventive measures
+Improved Citi’s  ranking to 1  from 35 amongst  4000+ global broker-dealers  on regulatory scorecards through  reporting automation
+Leadership initiatives
+Lead BA  for  Datawarehouse , Citi’s golden source of global cross product  trade and reference data  used for  regulatory reporting
+Generated  ~USD 1M (11%) annual savings  in data license cost through development of an in-house  centralized market data platform
+Identified the opportunity,  influenced senior management  to invest and  led the initiative
+Achieved  30% reduction  in team’s  client servicing time  through ideating and  leading  implementation of  self-service projects
+Led collaboration with 20+ teams   to design a strategic messaging data model for order management and trading systems
+Stakeholders managed
+Internal: MDs, Business, product & trading desk  heads , Sales & quant  traders , Financial  modelers , trading  ops ,  UI/UX  &  technology  teams
+External:  Regulators , Major partner  broker-dealers , Major data vendors ( Thomson Reuters, Bloomberg ), Tech vendors and  startups
+HCL TECHNOLOGIES LTD., SINGAPORE (May 2012 - Jun 2014)
+Business Analyst | Banking, Financial Services and Insurance Practice
+Achieved  accelerated career growth  by offering  a rare bundle of domain knowledge, technical and stakeholder management skills
+Management Trainee->Associate Business Analyst->Business Analyst in  1 year (Average ~3 years); Achieved by 1 in 100+ trainees
+Leadership initiatives, projects and stakeholder management
+Managed  a  globally distributed team  of 11 members, and clients  across 4 continents  during HCL’s various client engagements
+Secured a USD 150K follow-on engagement  during management of client stakeholder relationships on key accounts 
+Value creation for clients and peers
+Improved  a leading global banks’  bottom line by USD 300M  by enabling it to adopt  client lifetime value-based relationship  management
+Ideated and developed an  execution cost analytics tool  to track individual trade profitability and reconcile invoices
+Conducted 80+ hours  of technical and functional  training sessions  for 8 business analysts and 50+ software developers SKILLS & INTERESTS
+SKILLS & INTERESTS
+Skills : Business Analysis, Requirement elicitation & gathering, PL/SQL, Data analysis, Data warehousing, VBA macros programming, .Net, APIs
+Interests : Financial modeling, Business valuation, Strategy, Startups, Applied analytics, data science and AI, Programming, Product design, UX
+COMMUNITY IMPACT & PERSONAL INTERESTS
+COMMUNITY IMPACT & PERSONAL INTERESTS
+Community Impact:   Jamiyah Children’s Home, Singapore and South East Community Development Council (SECDC), Singapore
+Led a team of 5  to develop formalized IT & life skills  workshop program ;  Taught 30+ kids  from domestically violent and abusive homes
+Benefited 20+ elderly couples  living alone by developing a pilot program for volunteers to visit and help clean their homes regularly
+Sports:  Avidly played lawn tennis, swimming and rowing (Citibank  dragonboat racing team  member); Currently pursuing  pickleball
+Traveling/driving:  Traveled to  8+ countries in South East Asia , and 16/29 states in India;  road-trips  across Malaysia and Thailand

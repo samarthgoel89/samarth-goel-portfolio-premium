@@ -1,0 +1,1 @@
+console.log(JSON.stringify(fs.readFileSync('app/globals.css', 'utf8')));

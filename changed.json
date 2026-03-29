@@ -1,0 +1,16 @@
+{
+  "files": [
+    "app/page.js",
+    "app/globals.css",
+    "components/Navbar.js",
+    "components/CaseStudies.js",
+    "components/Projects.js",
+    "components/Philosophy.js",
+    "components/Education.js",
+    "components/Experience.js",
+    "components/Skills.js",
+    "components/Contact.js",
+    "components/Hero3D.js",
+    "components/LogoCloud.js"
+  ]
+}
