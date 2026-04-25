@@ -22,7 +22,7 @@ export default function Philosophy() {
       icon: <Target size={32} />,
       title: "Impact at Scale",
       tag: "VALUE_EXTRACTION",
-      text: "Engineering intelligence layers that drive INR 400cr+ in incremental PAT through hyper-filtered operational efficiency."
+      text: "Engineering intelligence layers that drive INR 400cr+ in incremental value through hyper-targeted operational efficiency and AI-first decision making."
     }
   ];
 
@@ -32,7 +32,7 @@ export default function Philosophy() {
         <div className="vision-header reveal" style={{ textAlign: 'center' }}>
           <span className="mono-label" style={{ display: 'block', marginBottom: '1rem' }}>[ THE_STRATEGIC_MINDSET ]</span>
           <h2 className="heading-xl text-gradient">The Philosophy</h2>
-          <p className="vision-lead" style={{ margin: '0 auto' }}>Intelligence is the new infrastructure. My mission is to build the cognitive layer that defines the next decade of financial ecosystems.</p>
+          <p className="vision-lead" style={{ margin: '0 auto' }}>Intelligence is the new infrastructure. My mission is to build the cognitive layer that defines how enterprises operate in the decade ahead — autonomous, self-improving, and compounding in value.</p>
         </div>
 
         <div className="vision-grid">
