@@ -3,151 +3,170 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useChat } from "@ai-sdk/react";
-import { MessageSquare, X, Send, Bot, Terminal } from "lucide-react";
+import { X, Send, Bot, Sparkles, MessageCircle } from "lucide-react";
+
+const SUGGESTIONS = [
+  "What makes Samarth different from other PMs?",
+  "How did you build ₹400Cr in AUM from zero?",
+  "What AI systems has Samarth shipped?",
+];
 
 export default function AIAssistant() {
   const [isOpen, setIsOpen] = useState(false);
-  const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat();
+  const { messages, input = "", handleInputChange, handleSubmit, isLoading, append } = useChat();
   const messagesEndRef = useRef(null);
+  const inputRef = useRef(null);
+
+  const handleSuggestionClick = (suggestion) => {
+    append({ role: "user", content: suggestion });
+  };
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+    if (isOpen && messages.length > 0) {
+      messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages, isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => inputRef.current?.focus(), 300);
+    }
+  }, [isOpen]);
 
   return (
     <>
+      {/* FAB Trigger Button */}
       <motion.button
-        className="fixed bottom-6 right-6 z-[100] p-4 rounded-full bg-slate-900 border border-slate-700 text-[#00FFA3] shadow-2xl hover:border-[#00FFA3] hover:shadow-[0_0_20px_rgba(0,255,163,0.3)] transition-all flex items-center gap-2 group"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
+        aria-label="Open AI assistant"
+        className="ai-fab"
+        whileHover={{ scale: 1.07 }}
+        whileTap={{ scale: 0.93 }}
         onClick={() => setIsOpen(true)}
+        style={{ display: isOpen ? "none" : "flex" }}
       >
-        <Terminal size={20} />
-        <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-mono font-semibold text-sm">
-          INIT_AI_COMMAND
-        </span>
+        <MessageCircle size={22} />
+        <span className="ai-fab-label">Ask Samarth AI</span>
       </motion.button>
 
+      {/* Chat Panel */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-24 right-6 w-[90vw] sm:w-[400px] h-[600px] max-h-[80vh] z-[100] flex flex-col rounded-2xl bg-slate-900/90 backdrop-blur-xl border border-slate-700 shadow-2xl overflow-hidden font-mono"
-          >
-            {/* Header */}
-            <div className="flex bg-slate-800/80 justify-between items-center p-4 border-b border-slate-700">
-              <div className="flex items-center gap-3 text-slate-200 text-sm">
-                <div className="relative">
-                  <Bot size={20} className="text-[#00FFA3]" />
-                  <span className="absolute -top-1 -right-1 flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FFA3] opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00FFA3]"></span>
-                  </span>
-                </div>
-                <div>
-                  <h3 className="font-bold tracking-wider">SAMARTH_AI OS v2.0</h3>
-                  <p className="text-xs text-slate-400">Strategic knowledge index active.</p>
-                </div>
-              </div>
-              <button 
-                onClick={() => setIsOpen(false)} 
-                className="text-slate-400 hover:text-white hover:bg-slate-700 p-1 rounded transition-colors"
-                aria-label="Close chat"
-              >
-                <X size={20} />
-              </button>
-            </div>
+          <>
+            {/* Backdrop (mobile only) */}
+            <motion.div
+              className="ai-backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsOpen(false)}
+            />
 
-            {/* Chat Area */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-4 font-sans">
-              {messages.length === 0 && (
-                <motion.div 
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }} 
-                  transition={{ delay: 0.2 }}
-                  className="flex flex-col items-center justify-center h-full text-center space-y-4"
-                >
-                  <div className="p-4 rounded-full bg-[#00FFA3]/10 text-[#00FFA3] border border-[#00FFA3]/20">
-                    <Terminal size={32} />
+            <motion.div
+              className="ai-panel"
+              initial={{ opacity: 0, y: 32, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 32, scale: 0.96 }}
+              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            >
+              {/* Header */}
+              <div className="ai-header">
+                <div className="ai-header-left">
+                  <div className="ai-avatar">
+                    <Bot size={18} />
+                    <span className="ai-status-dot" />
                   </div>
                   <div>
-                    <p className="text-slate-200 font-medium">Terminal Initialized.</p>
-                    <p className="mt-2 text-slate-400 text-sm leading-relaxed max-w-xs mx-auto">
-                      Ask about Samarth's strategic scaling at Clix/DMI, his 4800x efficiency improvements, or core AI capabilities.
-                    </p>
-                  </div>
-                  
-                  {/* Suggestion Pills */}
-                  <div className="flex flex-wrap justify-center gap-2 mt-4 pt-4">
-                    {["How did you scale the 400Cr LAP book?", "Explain the 4800X efficiency.", "What are your core AI tools?"].map((suggestion, i) => (
-                      <button
-                        key={i}
-                        onClick={() => handleInputChange({ target: { value: suggestion } })}
-                        className="text-xs px-3 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 hover:border-[#00FFA3] hover:text-[#00FFA3] transition-colors"
-                      >
-                        {suggestion}
-                      </button>
-                    ))}
-                  </div>
-                </motion.div>
-              )}
-              
-              {messages.map((m) => (
-                <motion.div 
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  key={m.id} 
-                  className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}
-                >
-                  <div className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-sm ${
-                    m.role === "user" 
-                      ? "bg-[#00FFA3]/10 text-slate-100 border border-[#00FFA3]/30 rounded-br-sm ml-auto" 
-                      : "bg-slate-800 text-slate-200 border border-slate-700 rounded-bl-sm"
-                  }`}>
-                    {m.content.split('\n').map((line, i) => (
-                      <span key={i}>
-                        {line}
-                        <br />
-                      </span>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
-              
-              {isLoading && (
-                <div className="flex justify-start">
-                  <div className="bg-slate-800 border border-slate-700 rounded-2xl rounded-bl-sm px-4 py-3 flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#00FFA3] animate-pulse"></span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#00FFA3] animate-pulse delay-150"></span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#00FFA3] animate-pulse delay-300"></span>
+                    <p className="ai-header-name">Samarth AI</p>
+                    <p className="ai-header-sub">Strategic knowledge index · Active</p>
                   </div>
                 </div>
-              )}
-              <div ref={messagesEndRef} />
-            </div>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="ai-close-btn"
+                  aria-label="Close chat"
+                >
+                  <X size={18} />
+                </button>
+              </div>
 
-            {/* Input Form */}
-            <form onSubmit={handleSubmit} className="p-4 border-t border-slate-700 bg-slate-800/80">
-              <div className="relative flex items-center">
+              {/* Messages */}
+              <div className="ai-messages">
+                {messages.length === 0 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.15 }}
+                    className="ai-empty"
+                  >
+                    <div className="ai-empty-icon">
+                      <Sparkles size={28} />
+                    </div>
+                    <p className="ai-empty-title">Ask me anything</p>
+                    <p className="ai-empty-sub">
+                      Ask about his career, AI frameworks, key wins, or how he approaches strategy.
+                    </p>
+                    <div className="ai-suggestions">
+                      {SUGGESTIONS.map((s, i) => (
+                        <button
+                          key={i}
+                          className="ai-suggestion"
+                          onClick={() => handleSuggestionClick(s)}
+                        >
+                          {s}
+                        </button>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
+
+                {messages.map((m) => (
+                  <motion.div
+                    key={m.id}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className={`ai-msg-row ${m.role === "user" ? "ai-msg-user" : "ai-msg-bot"}`}
+                  >
+                    <div className={`ai-bubble ${m.role === "user" ? "ai-bubble-user" : "ai-bubble-bot"}`}>
+                      {m.content}
+                    </div>
+                  </motion.div>
+                ))}
+
+                {isLoading && (
+                  <div className="ai-msg-row ai-msg-bot">
+                    <div className="ai-bubble ai-bubble-bot ai-typing">
+                      <span />
+                      <span />
+                      <span />
+                    </div>
+                  </div>
+                )}
+
+                <div ref={messagesEndRef} />
+              </div>
+
+              {/* Input */}
+              <form onSubmit={handleSubmit} className="ai-input-row">
                 <input
+                  ref={inputRef}
                   value={input}
                   onChange={handleInputChange}
-                  placeholder="Query knowledge base..."
-                  className="w-full bg-slate-900 border border-slate-700 rounded-xl pl-4 pr-12 py-3 text-sm text-slate-200 focus:outline-none focus:border-[#00FFA3]/70 focus:ring-1 focus:ring-[#00FFA3]/50 font-sans transition-all placeholder:text-slate-500"
+                  placeholder="Ask about strategy, AI, or impact..."
+                  className="ai-input"
+                  disabled={isLoading}
+                  autoComplete="off"
                 />
                 <button
                   type="submit"
-                  disabled={!input || isLoading}
-                  className="absolute right-2 text-slate-400 hover:text-[#00FFA3] p-2 rounded-lg disabled:opacity-30 disabled:hover:text-slate-400 transition-colors"
-                  aria-label="Send message"
+                  disabled={!input.trim() || isLoading}
+                  className="ai-send-btn"
+                  aria-label="Send"
                 >
-                  <Send size={18} />
+                  <Send size={16} />
                 </button>
-              </div>
-            </form>
-          </motion.div>
+              </form>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </>
