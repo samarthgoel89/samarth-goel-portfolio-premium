@@ -16,18 +16,18 @@ export default function Education() {
   const educationList = [
     {
       institution: "Indian School of Business (ISB)",
-      period: "Apr 2018 – Apr 2019",
+      period: "2018 – 2019",
       degree: "Post Graduation Program (PGP) in Management",
       major: "Major: Finance and Marketing",
       highlights: [
-        "Dean’s List",
+        "Dean's List",
       ],
       icon: <GraduationCap size={24} />,
       color: "var(--accent-primary)"
     },
     {
       institution: "Jaypee Institute of Information Technology",
-      period: "Jul 2007 – Feb 2012",
+      period: "2007 – 2012",
       degree: "M.B.A. – Finance & Strategy | B.Tech. – Computer Science Engineering",
       major: "Dual Degree",
       highlights: [
@@ -40,7 +40,7 @@ export default function Education() {
     },
     {
       institution: "Delhi Public School, Vasant Kunj",
-      period: "1994 - 2007",
+      period: "up to 2007",
       degree: "High School",
       major: "Pre-University",
       highlights: [
