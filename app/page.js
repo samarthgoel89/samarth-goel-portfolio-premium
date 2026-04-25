@@ -95,38 +95,38 @@ export default function Home() {
                 className="hero-text-content"
               >
                 <h1 className="hero-display-title">
-                  I Architect AI Solutions that <br />
-                  <span className="text-gradient">Solve $100M Business Problems.</span>
+                  I Build AI Systems That<br />
+                  <span className="text-gradient">Turn Strategy into Revenue.</span>
                 </h1>
                 
                 <p className="hero-lead-text">
-                  Product Head and Strategy Professional with the mind of an AI architect. Specializing in scaling financial systems from 0 to 400Cr and delivering 4800X operational efficiency through agentic automation.
+                  Strategic Product Leader &amp; AI Architect. I take broken operations and build intelligent systems that print outcomes — ₹400Cr in AUM, 4800X efficiency gains, $2M in risk mitigation — all without proportional headcount growth.
                 </p>
 
                 {/* Proof Bar - Re-positioned for Visibility */}
                 <div className="proof-bar">
                   <div className="proof-metric">
-                    <span className="proof-number">4000+Cr</span>
+                    <span className="proof-number">₹4000+Cr</span>
                     <span className="proof-label mono">AUM MANAGED</span>
                   </div>
                   <div className="proof-divider" />
                   <div className="proof-metric">
-                    <span className="proof-number">40%</span>
-                    <span className="proof-label mono">OF COMPANY PAT</span>
+                    <span className="proof-number">4800X</span>
+                    <span className="proof-label mono">EFFICIENCY GAIN</span>
                   </div>
                   <div className="proof-divider" />
                   <div className="proof-metric">
                     <span className="proof-number">$2M</span>
-                    <span className="proof-label mono">FINES PREVENTED</span>
+                    <span className="proof-label mono">RISK AVERTED</span>
                   </div>
                 </div>
 
                 <div className="hero-buttons">
                   <a href="#contact" className="cta-button-primary cta-highlight">
-                    Book My AI Strategy Audit <ArrowUpRight size={20} />
+                    Start a Conversation <ArrowUpRight size={20} />
                   </a>
                   <a href="#case-studies" className="cta-button-primary">
-                    <span className="mono">VIEW_IMPACT</span>
+                    <span className="mono">SEE_THE_IMPACT</span>
                   </a>
                 </div>
 
@@ -175,15 +175,15 @@ export default function Home() {
                 <TrendingUp className="icon-blue" size={48} strokeWidth={1.5} />
                 <span className="mono-label">IMPACT_METRICS</span>
               </div>
-              <h2 className="heading-lg">Strategic Transformation Leader</h2>
-              <p className="text-mid">Orchestrating AI-driven growth and massive digital transformation across large-scale enterprises. Scaled critical business units while achieving 4800X operational efficiency gains via intelligent automation.</p>
+              <h2 className="heading-lg">The Builder Behind the Numbers</h2>
+              <p className="text-mid">I don't just advise — I build. From AI agent frameworks to full digital ecosystems, every strategy I execute is anchored in working code and measurable P&L impact. My systems operate 24/7, scale without headcount, and create compounding returns.</p>
               
               <div className="metrics-row">
                 <div className="metric-box">
                   <div className="metric-val heading-xl">
-                    <Counter value={4300} suffix="+" prefix="INR " />
+                    <Counter value={4300} suffix="+" prefix="₹" />
                   </div>
-                  <div className="metric-tag mono">TOTAL_VALUE_OBTAINED (Cr)</div>
+                  <div className="metric-tag mono">TOTAL_AUM_MANAGED (Cr)</div>
                 </div>
                 <div className="metric-box">
                   <div className="metric-val heading-xl">
@@ -203,7 +203,7 @@ export default function Home() {
             >
               <Cpu className="icon-purple" size={48} strokeWidth={1.5} />
               <h3 className="heading-sm">AI Agent Expert</h3>
-              <p className="mono-sm text-dim">LangChain, Python, LLM Orchestration.</p>
+              <p className="mono-sm text-dim">LangChain · RAG · Voice AI · LLM Orchestration.</p>
             </motion.div>
 
             <motion.div 
@@ -215,7 +215,7 @@ export default function Home() {
             >
               <ShieldCheck className="icon-emerald" size={48} strokeWidth={1.5} />
               <h3 className="heading-sm">Strategic Visionary</h3>
-              <p className="mono-sm text-dim">Process Optimization & Market Strategy.</p>
+              <p className="mono-sm text-dim">Market Strategy · Process Design · Zero-to-One.</p>
             </motion.div>
 
             <motion.div 
@@ -227,8 +227,8 @@ export default function Home() {
             >
               <div className="flex-between">
                 <div>
-                  <h3 className="heading-sm">Global Perspective</h3>
-                  <p className="text-dim">Forging API-first ecosystems and scaling products alongside Samsung, Google, and other global tech titans.</p>
+                  <h3 className="heading-sm">Global Track Record</h3>
+                  <p className="text-dim">Built API-first ecosystems in partnership with Samsung and Google. Delivered institutional-grade banking intelligence at Citibank Singapore ranked #1 globally.</p>
                 </div>
                 <div style={{ flexShrink: 0, marginLeft: '1.5rem', width: '120px', height: '120px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.1)', boxShadow: '0 0 20px rgba(138,43,226,0.3)', position: 'relative' }}>
                   <Image 
